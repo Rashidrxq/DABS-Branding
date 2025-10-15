@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DABS - Digital Advertising & Branding Solutions</title>
+
+  <!-- Premium Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="style/home.css"/>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="DABS Logo"/>
+          </a>
+        </div>
+
+        <div class="nav-links">
+          <div class="sidebar-logo">
+            <span class="logo-name">DABS</span>
+            <i class="bx bx-x"></i>
+          </div>
+          <ul class="links">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li>
+              <a href="#" aria-haspopup="true">Courses</a>
+              <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
+              <ul class="htmlCss-sub-menu sub-menu">
+                <li class="more">
+                  <a href="#">Digital Marketing</a>
+                  <i class="bx bxs-chevron-right arrow more-arrow"></i>
+                  <ul class="more-sub-menu sub-menu">
+                    <li><a href="digital-marketing-popular-courses.html">Popular Courses</a></li>
+                    <li><a href="digital-marketing-short-courses.html">Short Courses</a></li>
+                    <li><a href="digital-marketing-pro-courses.html">Pro Courses</a></li>
+                    <li><a href="digital-marketing-online-courses.html">Online Courses</a></li>
+                  </ul>
+                </li>
+                <li><a href="branding-advertising.html">Branding & Advertising</a></li>
+                <li><a href="media-production.html">Media Production</a></li>
+              </ul>
+            </li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="placement.html">Placements</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li class="head-download">
+              <a href="#" target="_blank">DOWNLOAD</a>
+            </li>
+          </ul>
+        </div>
+        <i class="bx bx-menu" id="menu-icon"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="Hero">
+   <div class="video-background">
+  <video autoplay muted loop playsinline preload="metadata" poster="assets/images/hero-poster.jpg">
+    <source src="assets/videos/hero-720p.mp4" type="video/mp4" media="(max-width: 768px)">
+    <source src="assets/videos/hero.mp4" type="video/mp4">
+  </video>
+</div>
+
+</div>
+
+    <div class="heroContent">
+      <h1>Creating <span>Talents</span> Serving Brands!</h1>
+      <a class="btn" href="#" target="_blank">Build Your Future with Us</a>
+      <div class="social-links">
+        <a href="#" title="Twitter" aria-label="Visit our Twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" title="Facebook" aria-label="Visit our Facebook"><i class="bx bxl-facebook-square"></i></a>
+        <a href="#" title="Instagram" aria-label="Visit our Instagram"><i class="bx bxl-instagram-alt"></i></a>
+        <a href="#" title="LinkedIn" aria-label="Visit our LinkedIn"><i class="bx bxl-linkedin-square"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet the Team Section -->
+  <section class="meet-team-section" id="meet-team">
+    <div class="container">
+      <div class="section-title">
+        <h2>MEET THE TEAM</h2>
+        <p>Our company doesn’t emerge out of thin air; rather, we have a robust foundation in marketing and branding, backed by a proven track record of numerous accomplishments.</p>
+      </div>
+    </div>
+
+    <div class="team-image-container">
+      <img src="assets/images/WhatsApp Image 2025-10-14 at 16.00.29_1407a118.jpg" alt="A photograph of the DABS team" class="team-image"/>
+
+      <!-- Editable team markers -->
+      <div class="team-marker marker-blue" style="top:55%;left:25%;" data-name="Muhsin T.T" data-role="CEO" data-img="assets/images/ceo.jpg"></div>
+      <div class="team-marker marker-green" style="top:45%;left:50%;" data-name="Shamlu" data-role="Co‑Founder & HO" data-img="assets/images/co-founder.jpg"></div>
+      <div class="team-marker marker-yellow" style="top:86%;left:55%;" data-name="Aswin S Kumar" data-role="Production Head" data-img="assets/images/production.jpg"></div>
+    </div>
+  </section>
+
+  <!-- Side-sliding Info Card -->
+  <div class="team-info-card" id="team-info-card" aria-live="polite">
+    <img id="card-img" src="" alt="Team Member"/>
+    <h3 id="card-name"></h3>
+    <p id="card-role"></p>
+  </div>
+
+  <!-- COURSES SECTION -->
+  <section class="courses-section">
+    <div class="container">
+      <div class="courses-header">
+        <div class="header-text">
+          <h2>Explore Our Courses</h2>
+        </div>
+        <div class="header-description">
+          <p>From foundational principles to advanced AI-driven strategies, our courses are designed to equip you with the most in-demand skills in the digital landscape.</p>
+          <a href="/all-courses.html" class="view-all-link">View All Courses <i class="bx bx-right-arrow-alt"></i></a>
+        </div>
+      </div>
+
+      <div class="courses-grid">
+        <div class="course-card">
+          <img src="assets/images/digital-marketing.jpg" alt="Digital Marketing" class="card-bg"/>
+          <div class="card-content">
+            <h3>Digital Marketing</h3>
+            <a href="#" class="card-arrow-btn"><i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <img src="assets/images/media.jpg" alt="Media Production" class="card-bg"/>
+          <div class="card-content">
+            <h3>Media Production</h3>
+            <a href="#" class="card-arrow-btn"><i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <img src="assets/images/course-ai-design.jpg" alt="AI Graphic Design & Branding" class="card-bg"/>
+          <div class="card-content">
+            <h3>AI Graphic Design & Branding</h3>
+            <a href="#" class="card-arrow-btn"><i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+        </div>
+
+        <div class="course-card">
+          <img src="assets/images/t1-1.png" alt="AI Advanced Digital Marketing" class="card-bg"/>
+          <div class="card-content">
+            <h3>AI Advanced Digital Marketing</h3>
+            <a href="#" class="card-arrow-btn"><i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+<section class="certs">
+  <div class="certs__container">
+    <h2 class="certs__title">Industry‑Recognized Certifications</h2>
+    <p class="certs__subtitle">You’ll Receive</p>
+    <p class="certs__desc">
+      Gain credentials from leading platforms and institutions that are highly valued by employers worldwide.
+    </p>
+
+    <ul class="certs__logos">
+      <li class="certs__item">
+        <div class="certs__card">
+          <img src="assets/images/Google.png" alt="Google certification"/>
+        </div>
+      </li>
+      <li class="certs__item">
+        <div class="certs__card">
+          <img src="assets/images/Meta-1.png" alt="Meta certification"/>
+        </div>
+      </li>
+      <li class="certs__item">
+        <div class="certs__card">
+          <img src="assets/images/HubSpot.png" alt="HubSpot certification"/>
+        </div>
+      </li>
+      <li class="certs__item">
+        <div class="certs__card">
+          <img src="assets/images/Semrush.png" alt="Semrush certification"/>
+        </div>
+      </li>
+      <li class="certs__item">
+        <div class="certs__card">
+          <img src="assets/images/YouTube.png" alt="YouTube certification"/>
+        </div>
+      </li>
+      <li class="certs__item">
+        <div class="certs__card">
+          <img src="assets/images/logo.png" alt="DABS certification"/>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+
+
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-choose-us-section">
+    <div class="why-choose-container">
+      <div class="why-choose-text">
+        <span class="section-tag">WHY CHOOSE US</span>
+        <h2>What Makes Us the Right Choice for You</h2>
+        <p>DABS Institute is more than just a training center – it's a launchpad for creative careers. Our curriculum is designed by professionals and delivered through practical sessions, internships, and agency collaborations.</p>
+        <a href="#contact" class="cta-button">Get Started Today <i class="bx bx-right-arrow-alt"></i></a>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="bx bx-laptop"></i></div>
+          <div class="feature-content">
+            <h3>Real-World Projects</h3>
+            <p>Work on actual client projects and build a portfolio that showcases your skills to potential employers.</p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="bx bx-briefcase-alt-2"></i></div>
+          <div class="feature-content">
+            <h3>Internship Opportunities</h3>
+            <p>Gain hands-on experience through our extensive network of partner agencies and companies.</p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="bx bx-palette"></i></div>
+          <div class="feature-content">
+            <h3>Portfolio Development</h3>
+            <p>Create a professional portfolio that stands out and demonstrates your creative abilities effectively.</p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="bx bx-buildings"></i></div>
+          <div class="feature-content">
+            <h3>Agency Visits & Industry Talks</h3>
+            <p>Connect with industry professionals and get insights into the latest trends and practices.</p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="bx bx-group"></i></div>
+          <div class="feature-content">
+            <h3>Expert Team</h3>
+            <p>Learn from seasoned professionals who bring years of industry experience to the classroom.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDERS SECTION -->
+  <section class="founders-section">
+    <div class="founders-container">
+      <div class="founders-text">
+        <span class="section-tag">THE FOUNDERS</span>
+        <h2>"We Work Together, We Innovate Together"</h2>
+        <p>Meet our professional team members who are dedicating themselves to create innovation and help people by pushing the limits of technology.</p>
+      </div>
+
+      <div class="founders-grid">
+        <div class="founder-card">
+          <img src="assets/images/ceo.jpg" alt="MUHSIN T.T"/>
+          <div class="founder-info">
+            <span class="name">MUHSIN T.T</span>
+            <span class="role">CEO</span>
+          </div>
+        </div>
+
+        <div class="founder-card">
+          <img src="assets/images/co-founder.jpg" alt="SHAMLU"/>
+          <div class="founder-info">
+            <span class="name">SHAMLU</span>
+            <span class="role">Co‑Founder & HO</span>
+          </div>
+        </div>
+
+        <div class="founder-card">
+          <img src="assets/images/production.jpg" alt="ASWIN S KUMAR"/>
+          <div class="founder-info">
+            <span class="name">ASWIN S KUMAR</span>
+            <span class="role">PRODUCTION HEAD</span>
+          </div>
+        </div>
+
+        <div class="founder-card">
+          <img src="assets/images/cdp.jpg" alt="ASIF"/>
+          <div class="founder-info">
+            <span class="name">ASIF</span>
+            <span class="role">Creative Designer</span>
+          </div>
+        </div>
+
+        <div class="founder-card">
+          <img src="assets/images/photographer.jpg" alt="ALI HASHIM"/>
+          <div class="founder-info">
+            <span class="name">ALI HASHIM</span>
+            <span class="role">Photographer, Dene Production</span>
+          </div>
+        </div>
+
+        <div class="founder-card">
+          <img src="assets/images/ceo.jpg" alt="Daniel Rakoosh"/>
+          <div class="founder-info">
+            <span class="name">Daniel Rakoosh</span>
+            <span class="role">CEO</span>
+          </div>
+          <div class="founder-social">
+            <a href="#" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="bx bxl-linkedin-square"></i></a>
+            <a href="#" aria-label="Instagram"><i class="bx bxl-instagram-alt"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLACEMENT GALLERY SECTION -->
+  <section class="placement-gallery-section">
+    <div class="placement-gallery-container">
+      <div class="placement-gallery-header">
+        <h2>Our Placed Stars</h2>
+        <p>A glimpse into the success stories of our brightest graduates who are now making their mark in the industry.</p>
+      </div>
+
+      <section class="fashion-cards">
+        <div class="card">
+          <img src="assets/images/head1.jpg" alt="Placed 1"/>
+          <div class="card-bottom blue">
+            <h2><span>ALI</span><br/>HASHIM</h2>
+            <p>Photographer at Dene Production.</p>
+          </div>
+        </div>
+<!-- 
+        <div class="card">
+          <img src="assets/images/head1.jpg" alt="Placed 1"/>
+          <div class="card-bottom blue">
+            <h2><span>ALI</span><br/>HASHIM</h2>
+            <p>Photographer at Dene Production.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/images/head1.jpg" alt="Placed 1"/>
+          <div class="card-bottom blue">
+            <h2><span>ALI</span><br/>HASHIM</h2>
+            <p>Photographer at Dene Production.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/images/head1.jpg" alt="Placed 1"/>
+          <div class="card-bottom blue">
+            <h2><span>ALI</span><br/>HASHIM</h2>
+            <p>Photographer at Dene Production.</p>
+          </div>
+        </div>
+         -->
+
+        <div class="card">
+          <img src="assets/images/head2.jpg" alt="Placed 2"/>
+          <div class="card-bottom white">
+            <h2><span>MEERA</span><br/>NAIR</h2>
+            <p>Digital Strategist at Bright Media.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/images/head3.jpg" alt="Placed 3"/>
+          <div class="card-bottom dark">
+            <h2><span>ARUN</span><br/>KRISHNA</h2>
+            <p>Video Editor at CineCraft.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/images/head1.jpg" alt="Placed 1"/>
+          <div class="card-bottom red">
+            <h2><span>ALI</span><br/>HASHIM</h2>
+            <p>Photographer at Dene Production.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+
+
+
+
+<section class="faq" id="faq">
+  <div class="faq__container">
+    <header class="faq__head">
+      <h2>Frequently Asked Questions</h2>
+      <p>Find quick answers to the most common questions about our courses, admissions, payments, and placements.</p>
+    </header>
+
+    <div class="faq__grid">
+      <!-- Category (optional). Remove this if you don’t need grouping -->
+      <div class="faq__col">
+        <h3 class="faq__cat">Admissions</h3>
+
+        <details class="faq__item">
+          <summary class="faq__q">
+            What are the eligibility requirements?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq__a">
+            Most beginner programs require basic computer literacy and English comprehension; advanced tracks may ask for prior portfolio or fundamental skills in design/marketing. Please check the course page for any additional prerequisites.
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__q">
+            How do I apply for a course?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq__a">
+            Click “Apply” on the course page, fill the short form, and choose your preferred start date. You’ll receive an email with next steps and payment options once your seat is reserved.
+          </div>
+        </details>
+      </div>
+
+      <div class="faq__col">
+        <h3 class="faq__cat">Payments</h3>
+
+        <details class="faq__item">
+          <summary class="faq__q">
+            Do you offer installments or EMI?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq__a">
+            Yes, we support installment plans and common EMI options via major cards and UPI-based providers. Talk to our team to split fees across milestones without hidden charges.
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__q">
+            Is my payment refundable?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq__a">
+            Refunds are available before batch commencement minus an administrative fee. After classes begin, pro‑rata or deferrals may apply depending on attendance and materials access.
+          </div>
+        </details>
+      </div>
+
+      <div class="faq__col">
+        <h3 class="faq__cat">Learning & Tools</h3>
+
+        <details class="faq__item">
+          <summary class="faq__q">
+            Are classes online or in‑person?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq__a">
+            We run hybrid cohorts. Foundation modules can be attended online; studio and production sessions are in‑person for hands‑on practice with mentors.
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__q">
+            Will I get recordings and resources?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq__a">
+            Yes. Sessions are recorded whenever possible, and you’ll get templates, briefs, datasets, project checklists, and feedback files in your student dashboard.
+          </div>
+        </details>
+      </div>
+
+      <div class="faq__col">
+        <h3 class="faq__cat">Placements</h3>
+
+        <details class="faq__item">
+          <summary class="faq__q">
+            Do you provide placement assistance?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq__a">
+            We support resume building, mock interviews, portfolio reviews, and referrals through partnered agencies and brands. Shortlisting depends on performance and portfolio quality.
+          </div>
+        </details>
+
+        <details class="faq__item">
+          <summary class="faq__q">
+            How do I build a portfolio during the course?
+            <span class="faq__icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq__a">
+            Every module includes project briefs tied to real‑world scenarios. You’ll finish with 4–8 polished case studies suitable for Behance/Dribbble/LinkedIn and recruiter review.
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <footer class="faq__foot">
+      <p>Can’t find your answer? <a href="#support">Contact our support team</a>.</p>
+    </footer>
+  </div>
+</section>
+
+  
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer id="footer" class="footer position-relative section-with-bg">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <img src="assets/images/logo.png" width="35%" alt="DABS logo" style="margin-bottom:10px"/>
+          </a>
+          <div class="footer-contact pt-3"></div>
+
+          <div class="social-links d-flex">
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/></svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.16-.432.224-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Courses</h4>
+          <ul>
+            <li><a href="#Hero">Digital Marketing</a></li>
+            <li><a href="#About">Branding & Advertising</a></li>
+            <li><a href="#Product">Media Production</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Site Map</h4>
+          <ul>
+            <li><a href="#Hero">Home</a></li>
+            <li><a href="#About">Blog</a></li>
+            <li><a href="#Product">Placements</a></li>
+            <li><a href="#Gallery">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-3 footer-links">
+          <h4>Contact Now</h4>
+          <p>Second floor, yambu tower, near Big fresh hyper market, Mukkam, Kozhikode, Kerala 673602</p>
+          <p class="mt-3"><strong>Phone:</strong> <span>+91 9746135949</span></p>
+          <p><strong>Email:</strong> <span>info@dabsinstitute.com</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1">Dabs Institute</strong> <span>All Rights Reserved</span></p>
+    </div>
+  </footer>
+
+  <!-- Floating buttons -->
+  <div class="whatsapp" style="position: relative">
+    <a href="https://wa.me/+919895543646?text=Hello There!" class="whatsapp-button" target="_blank" aria-label="Chat on WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
+    </a>
+  </div>
+
+  <a href="javascript:" id="return-to-top" aria-label="Return to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-up-short" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5"/>
+    </svg>
+  </a>
+
+  <script src="script/home.js" defer></script>
+</body>
+</html>
