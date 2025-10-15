@@ -62,6 +62,110 @@ nav{
 
 
 
+/* Shell */
+.library-hero{
+  background:#edecec;
+  padding: 24px 0 36px;
+}
+.lh-wrap{
+  max-width: 1100px; margin: 0 auto; padding: 0 18px;
+  background:#f5f4f3;
+  border: 1px solid #e5e1de;
+  border-radius: 10px;
+  box-shadow: 0 12px 28px rgba(2,6,23,.08);
+  position: relative;
+}
+
+/* Controls row */
+.lh-controls{
+  display:flex; align-items:center; gap:16px; padding:16px;
+}
+.search{
+  position:relative; flex:1;
+  background:#fff; border:1px solid #e6e2df; border-radius:9999px;
+  height:46px; display:flex; align-items:center; gap:12px; padding:0 14px 0 58px;
+}
+.search .badge{
+  position:absolute; left:8px; top:50%; transform:translateY(-50%);
+  width:42px; height:42px; border-radius:999px; background:#111; color:#fff;
+  display:grid; place-items:center; font:700 10px/1 Inter,system-ui; text-align:center;
+}
+.search i{ color:#6b7280; font-size:18px }
+.search input{
+  flex:1; border:0; outline:0; background:transparent; font:500 14px Inter,system-ui; color:#111827;
+}
+
+/* Pills on right */
+.pill-menu{ display:flex; gap:10px }
+.pill-menu a, .pill-menu .lang{
+  border:1px solid #ddd6d3; background:#fff; color:#111827;
+  height:38px; padding:0 14px; border-radius:9999px;
+  display:inline-flex; align-items:center; text-decoration:none; font:600 13px Inter;
+}
+.pill-menu .lang{ padding:0 14px; border-radius:9999px }
+
+/* Headline */
+.lh-head{
+  display:grid; grid-template-columns: 1.2fr .8fr; gap:16px; align-items:center;
+  padding: 6px 16px 0 16px;
+}
+@media (max-width: 880px){ .lh-head{ grid-template-columns:1fr } }
+.lh-head h1{
+  margin:6px 0; font:900 clamp(2rem,5.4vw,3.4rem)/1.05 Inter,system-ui; letter-spacing:-.015em;
+}
+.lh-head p{ color:#374151; margin:2px 0 10px; }
+.cta{
+  display:inline-flex; align-items:center; justify-content:center;
+  height:36px; padding:0 14px; border-radius:9999px;
+  background:#111; color:#fff; text-decoration:none; font:700 13px Inter;
+  box-shadow:0 8px 18px rgba(17,24,39,.18);
+}
+
+/* Carousel strip */
+.lh-strip{
+  display:grid; grid-template-columns: 70px 1fr 70px; align-items:center;
+  padding: 22px 10px 10px; gap:10px; position:relative;
+}
+.cap{
+  width:70px; height:140px; border-radius: 9999px;
+  background:#111; clip-path: inset(0 0 0 50% round 9999px);
+}
+.cap--left{ clip-path: inset(0 50% 0 0 round 9999px) }
+
+.cards{
+  list-style:none; margin:0; padding:0; display:flex; align-items:center; gap:18px;
+  overflow:auto; scrollbar-width:none;
+}
+.cards::-webkit-scrollbar{ display:none }
+
+.card{
+  width:160px; height:120px; border-radius:12px; overflow:hidden;
+  box-shadow:0 10px 24px rgba(2,6,23,.12);
+  background:#fff;
+}
+.card img{ width:100%; height:100%; object-fit:cover; display:block }
+.tilt-1{ transform: rotate(-8deg) }
+.tilt-2{ transform: rotate(-14deg) }
+.flat{ transform: rotate(0deg) }
+
+/* Round badge in strip */
+.badge-round{
+  width:140px; height:140px; min-width:140px; border-radius:9999px;
+  background:#fff; border:1px solid #e5e1de;
+  display:grid; place-items:center;
+  box-shadow:0 10px 24px rgba(2,6,23,.12);
+}
+.ring{
+  width:120px; height:120px; border-radius:9999px; border:10px solid #111;
+  display:grid; place-items:center; text-align:center; color:#111;
+}
+.ring .big{ font:900 28px Inter }
+.ring small{ color:#6b7280 }
+
+/* Scroll hint */
+.lh-scroll{
+  display:flex; justify-content:center; padding:12px 0 22px; color:#6b7280; font:600 12px Inter;
+}
 
 
 

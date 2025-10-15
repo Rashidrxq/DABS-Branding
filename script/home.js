@@ -235,3 +235,28 @@ document.addEventListener('DOMContentLoaded', () => {
   // If you also want courses to move, enable this:
   // initAutoScroller('.courses-grid', { speed: 0.4, pauseAfterAction: 1200 });
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const circularGallery = document.querySelector('.circular-gallery');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const numItems = galleryItems.length;
+    const angleIncrement = 360 / numItems; // Angle between each item
+
+    galleryItems.forEach((item, index) => {
+        // Calculate the rotation angle for each item to place it around the circle
+        const rotationAngle = index * angleIncrement;
+        item.style.setProperty('--rotation-angle', `${rotationAngle}deg`);
+        // The transform property in CSS will then use this custom property
+        // to position and rotate the item.
+    });
+
+    // Optional: Add hover effect to pause rotation (if desired)
+    // circularGallery.addEventListener('mouseenter', () => {
+    //     circularGallery.style.animationPlayState = 'paused';
+    // });
+
+    // circularGallery.addEventListener('mouseleave', () => {
+    //     circularGallery.style.animationPlayState = 'running';
+    // });
+});
