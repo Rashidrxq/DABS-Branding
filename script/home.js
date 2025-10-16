@@ -260,3 +260,6 @@ document.addEventListener('DOMContentLoaded', () => {
     //     circularGallery.style.animationPlayState = 'running';
     // });
 });
+
+
+
