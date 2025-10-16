@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Courses</title>
-
-  <!-- Premium Fonts -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DABS – Courses</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-
-  <link rel="stylesheet" href="style/course.css"/>
+  <link rel="stylesheet" href="style/course.css" />
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
 </head>
 <body>
 
-
-  <!-- Header -->
+  <!-- Header / Navigation (same structure/styles as homepage) -->
   <header>
     <nav>
       <div class="navbar">
@@ -32,30 +28,21 @@
             <i class="bx bx-x"></i>
           </div>
           <ul class="links">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li>
-              <a href="#" aria-haspopup="true">Courses</a>
+            <li><a href="index.html">Home</a></li>
+            <li class="active">
+              <a href="courses.html" aria-haspopup="true">Courses</a>
               <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
               <ul class="htmlCss-sub-menu sub-menu">
-                <li class="more">
-                  <a href="#">Digital Marketing</a>
-                  <!-- <i class="bx bxs-chevron-right arrow more-arrow"></i> -->
-                  <ul class="more-sub-menu sub-menu">
-                    <li><a href="digital-marketing-popular-courses.html">Popular Courses</a></li>
-                    <li><a href="digital-marketing-short-courses.html">Short Courses</a></li>
-                    <li><a href="digital-marketing-pro-courses.html">Pro Courses</a></li>
-                    <li><a href="digital-marketing-online-courses.html">Online Courses</a></li>
-                  </ul>
-                </li>
-                <li><a href="branding-advertising.html">Branding & Advertising</a></li>
-                <li><a href="media-production.html">Media Production</a></li>
+                <li><a href="#dm">Digital Marketing</a></li>
+                <li><a href="#branding">Branding & Advertising</a></li>
+                <li><a href="#media">Media Production</a></li>
               </ul>
             </li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="placement.html">Placements</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#contact-section">Contact Us</a></li>
             <li class="head-download">
-              <a href="#" target="_blank">DOWNLOAD</a>
+              <a class="btn btn-connect" href="#contact-section">Let’s Connect</a>
             </li>
           </ul>
         </div>
@@ -64,102 +51,254 @@
     </nav>
   </header>
 
+  <main class="courses-page">
+    <!-- Decorative background -->
+    <svg class="courses-bg" viewBox="0 0 1440 600" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0%" stop-color="#e8f1ff"/>
+          <stop offset="100%" stop-color="#f7faff"/>
+        </linearGradient>
+        <linearGradient id="blob" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0%" stop-color="#8ab6ff" stop-opacity=".35"/>
+          <stop offset="100%" stop-color="#b3d1ff" stop-opacity=".15"/>
+        </linearGradient>
+      </defs>
+      <rect width="1440" height="600" fill="url(#g1)"/>
+      <g>
+        <ellipse cx="280" cy="160" rx="220" ry="120" fill="url(#blob)"/>
+        <ellipse cx="1180" cy="420" rx="260" ry="140" fill="url(#blob)"/>
+        <ellipse cx="720" cy="80" rx="180" ry="90" fill="url(#blob)"/>
+      </g>
+    </svg>
+    <!-- Digital Marketing -->
+    <section id="dm" class="course-section reveal-on-scroll">
+      <div class="container">
+        <header class="course-head">
+          <h2 class="course-title">Digital Marketing Courses</h2>
+          <p class="course-sub">Master the art of growing brands online.</p>
+        </header>
 
-  
-<!-- hero section -->
+        <div class="course-grid">
+          <!-- Card 1 -->
+          <details class="course-card" data-title="Popular Courses" data-duration="8–12 weeks" data-mode="Online/Offline" data-description="Beginner‑friendly programs to kickstart your Digital Marketing journey with practical tasks and tool walkthroughs." data-features='["Industry‑Relevant Curriculum","Hands‑On Learning Approach","Expert Mentors & Support","Portfolio‑Ready Projects","Certification Prep","Career Guidance"]'>
+            <summary class="card-summary course-trigger">
+              <img src="assets/images/digital-marketing.jpg" alt="Popular Courses" class="card-cover"/>
+              <div class="card-meta">
+                <h3>Popular Courses</h3>
+                <p>Beginner-friendly programs to kickstart your DM journey.</p>
+                <button class="cta-button" type="button">Learn More</button>
+              </div>
+            </summary>
+            <div class="card-details">
+              <p><strong>Duration:</strong> 8–12 weeks</p>
+              <p><strong>Skills:</strong> SEO basics, Social media strategy, Analytics fundamentals</p>
+              <p><strong>Description:</strong> Build solid foundations with practical projects and tool walkthroughs.</p>
+            </div>
+          </details>
 
+          <!-- Card 2 -->
+          <details class="course-card" data-title="Short Courses" data-duration="1–3 weeks" data-mode="Online" data-description="Compact, focused modules to level‑up specific skills fast." data-features='["Actionable Checklists","Live Demos","Downloadable Templates","Tool Mastery","Community Q&A","Project Feedback"]'>
+            <summary class="card-summary course-trigger">
+              <img src="assets/images/Google.png" alt="Short Courses" class="card-cover"/>
+              <div class="card-meta">
+                <h3>Short Courses</h3>
+                <p>Compact, focused modules to level‑up specific skills.</p>
+                <button class="cta-button" type="button">Learn More</button>
+              </div>
+            </summary>
+            <div class="card-details">
+              <p><strong>Duration:</strong> 1–3 weeks</p>
+              <p><strong>Skills:</strong> Google Ads, Instagram Reels, Email flows, Landing pages</p>
+              <p><strong>Description:</strong> Bite-sized courses with worksheets and checklists for quick wins.</p>
+            </div>
+          </details>
 
+          <!-- Card 3 -->
+          <details class="course-card" data-title="Advanced Programs" data-duration="12–24 weeks" data-mode="Offline + Online Labs" data-description="Deep‑dive specializations for career acceleration with mentor reviews and data‑driven projects." data-features='["Advanced Performance Tactics","CRO & Experimentation","Automation Workflows","Data Storytelling","Mentor 1:1s","Interview Prep"]'>
+            <summary class="card-summary course-trigger">
+              <img src="assets/images/Semrush.png" alt="Advanced Programs" class="card-cover"/>
+              <div class="card-meta">
+                <h3>Advanced Programs</h3>
+                <p>Deep-dive specializations for career acceleration.</p>
+                <button class="cta-button" type="button">Learn More</button>
+              </div>
+            </summary>
+            <div class="card-details">
+              <p><strong>Duration:</strong> 12–24 weeks</p>
+              <p><strong>Skills:</strong> Performance marketing, CRO, Automation, Data storytelling</p>
+              <p><strong>Description:</strong> Mentor-led, project‑heavy tracks with portfolio reviews.</p>
+            </div>
+          </details>
 
-<!-- New Full Hero -->
-<!-- Hero -->
-<section class="hero-full" id="hero">
-  <div class="hero-bg" role="img" aria-label="Hero background"></div>
+          <!-- Card 4 -->
+          <details class="course-card" data-title="Online Sessions" data-duration="Flexible" data-mode="Online" data-description="Live and recorded classes for flexible learning with resources and replays." data-features='["Live + Recordings","Modular Syllabus","Office Hours","Resource Library","Progress Tracking","Peer Community"]'>
+            <summary class="card-summary course-trigger">
+              <img src="assets/images/YouTube.png" alt="Online Sessions" class="card-cover"/>
+              <div class="card-meta">
+                <h3>Online Sessions</h3>
+                <p>Live and recorded classes for flexible learning.</p>
+                <button class="cta-button" type="button">Learn More</button>
+              </div>
+            </summary>
+            <div class="card-details">
+              <p><strong>Duration:</strong> Flexible</p>
+              <p><strong>Skills:</strong> Content strategy, Video marketing, Analytics dashboards</p>
+              <p><strong>Description:</strong> Attend from anywhere with access to session recordings and resources.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
 
-  <div class="hero-in">
-    <!-- Left: copy -->
-    <div class="hero-copy">
-      <h1>Build Skills. Launch Careers.</h1>
-      <p>Hands‑on courses in Marketing, Design, and Media Production—guided by mentors and real projects.</p>
-      <a class="hero-btn" href="#courses">Explore Courses <i class="bx bx-right-arrow-alt"></i></a>
+    <!-- Branding & Advertising -->
+    <section id="branding" class="course-section reveal-on-scroll">
+      <div class="container">
+        <header class="course-head">
+          <h2 class="course-title">Branding and Advertising</h2>
+          <p class="course-sub">Build brands that connect and campaigns that inspire.</p>
+        </header>
+        <div class="course-grid one-col">
+          <details class="course-card" data-title="Brand Strategy & Campaigns" data-duration="10–16 weeks" data-mode="Offline" data-description="From brand identity systems to 360° integrated campaigns with art direction and messaging." data-features='["Strategic Frameworks","Creative Direction","Audience Insights","Campaign Planning","Storytelling Craft","Presentation Skills"]'>
+            <summary class="card-summary course-trigger">
+              <img src="assets/images/course-ai-design.jpg" alt="Brand Strategy" class="card-cover"/>
+              <div class="card-meta">
+                <h3>Brand Strategy & Campaigns</h3>
+                <p>From brand identity to 360° campaign execution.</p>
+                <button class="cta-button" type="button">Learn More</button>
+              </div>
+            </summary>
+            <div class="card-details">
+              <p><strong>Duration:</strong> 10–16 weeks</p>
+              <p><strong>Skills:</strong> Positioning, Messaging, Art direction, Campaign planning</p>
+              <p><strong>Description:</strong> Create brand systems, write campaign briefs, and produce pitch‑ready decks.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
 
-      <ul class="hero-social">
-        <li><a href="#" aria-label="Facebook"><i class="bx bxl-facebook"></i></a></li>
-        <li><a href="#" aria-label="Instagram"><i class="bx bxl-instagram-alt"></i></a></li>
-        <li><a href="#" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a></li>
-      </ul>
-    </div>
+    <!-- Media Production -->
+    <section id="media" class="course-section reveal-on-scroll">
+      <div class="container">
+        <header class="course-head">
+          <h2 class="course-title">Media Production</h2>
+          <p class="course-sub">Create compelling visual stories through professional media production.</p>
+        </header>
+        <div class="course-grid one-col">
+          <details class="course-card" data-title="Studio & Post‑Production" data-duration="8–14 weeks" data-mode="Offline" data-description="Hands‑on shoots, lighting, audio capture, and professional post workflows for compelling videos." data-features='["Cinematography Basics","Lighting Techniques","Audio Capture","Editing & Color","Motion Graphics","Production Management"]'>
+            <summary class="card-summary course-trigger">
+              <img src="assets/images/production.jpg" alt="Media Production" class="card-cover"/>
+              <div class="card-meta">
+                <h3>Studio & Post‑Production</h3>
+                <p>Hands‑on shoots, lighting, audio, and editing workflows.</p>
+                <button class="cta-button" type="button">Learn More</button>
+              </div>
+            </summary>
+            <div class="card-details">
+              <p><strong>Duration:</strong> 8–14 weeks</p>
+              <p><strong>Skills:</strong> Cinematography, Color, Sound design, Motion graphics</p>
+              <p><strong>Description:</strong> Plan, shoot, and deliver polished videos using industry tools and best practices.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <!-- Right: floating brand chips -->
-    <div class="chips" aria-hidden="true">
-      <div class="chip chip--instagram"><img src="assets/logos/instagram.svg" alt="Instagram"></div>
-      <div class="chip chip--google"><img src="assets/logos/google.svg" alt="Google"></div>
-      <div class="chip chip--youtube"><img src="assets/logos/youtube.svg" alt="YouTube"></div>
-      <div class="chip chip--whatsapp"><img src="assets/logos/whatsapp.svg" alt="WhatsApp"></div>
+  <!-- Glassmorphism Modal -->
+  <div id="course-modal" class="course-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-dialog" role="document">
+      <button class="modal-close" aria-label="Close" data-close>&times;</button>
+      <header class="modal-head">
+        <h3 id="modal-title"></h3>
+        <p id="modal-sub"></p>
+      </header>
+      <section class="modal-body">
+        <div class="modal-meta">
+          <div><strong>Duration:</strong> <span id="modal-duration"></span></div>
+          <div><strong>Study Mode:</strong> <span id="modal-mode"></span></div>
+        </div>
+        <p id="modal-desc" class="modal-desc"></p>
+        <div class="modal-features">
+          <h4>Why choose this course</h4>
+          <ul id="modal-features"></ul>
+        </div>
+      </section>
     </div>
   </div>
-</section>
 
-<!-- end of hero section -->
-
-
-
-
-
-
-<section class="programs" id="programs">
-<h2 class="section-title" id="courses">Our Courses</h2>
-  <div class="programs__container">
-    <!-- Card 1 -->
-    <article class="prog-card prog--white">
-      <div class="prog__text">
-        <h3>DIGITAL MARKETING</h3>
-        <p class="sub">Advanced</p>
-        <a class="prog__link" href="media-production.html">
-          <span class="dot">↗</span> Learn more
-        </a>
+  <!-- Contact Us Section -->
+  <section class="contact-section" id="contact-section">
+    <div class="container">
+      <h2 class="course-title" style="text-align: center; margin-bottom: 30px;">Contact Us</h2>
+      
+      <div class="contact-layout">
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3 class="course-sub">Get In Touch</h3>
+            
+            <div class="contact-item">
+              <i class="bx bx-map"></i>
+              <div>
+                <h4>Our Location</h4>
+                <p>DABS Institute, Mukkam</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="bx bx-phone"></i>
+              <div>
+                <h4>Phone Number</h4>
+                <p>+91 98955 43646</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="bx bx-envelope"></i>
+              <div>
+                <h4>Email Address</h4>
+                <p>info@dabsinstitute.com</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="bx bx-time"></i>
+              <div>
+                <h4>Working Hours</h4>
+                <p>Monday - Saturday: 9:00 AM - 6:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            
+            <div class="form-group">
+              <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+            </div>
+            
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Email Address" required>
+            </div>
+            
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+            </div>
+            
+            <button type="submit" class="cta-button">Send Message</button>
+          </form>
+        </div>
       </div>
-      <div class="prog__art">
-        <img src="assets/images/4f044b3fc73cff83a70abe55c944634e-removebg-preview.png" alt="Video production">
-      </div>
-    </article>
+    </div>
+  </section>
 
-    <!-- Card 2 -->
-    
-
-    <!-- Card 3 -->
-    <article class="prog-card prog--black">
-      <div class="prog__text">
-        <h3> Media Production</h3>
-        <p class="sub">abc</p>
-        <a class="prog__link" href="social-media.html"><span class="dot">↗</span> Learn more</a>
-      </div>
-      <div class="prog__art">
-        <img src="assets/images/4f044b3fc73cff83a70abe55c944634e-removebg-preview.png" alt="Social Media">
-      </div>
-    </article>
-
-    <!-- Card 4 -->
-    <article class="prog-card prog--white">
-      <div class="prog__text">
-        <h3>Branding and Advertising</h3>
-        <p class="sub">optimiz</p>
-        <a class="prog__link" href="seo.html"><span class="dot">↗</span> Learn more</a>
-      </div>
-      <div class="prog__art">
-        <img src="assets/images/4f044b3fc73cff83a70abe55c944634e-removebg-preview.png" alt="SEO">
-      </div>
-    </article>
-  </div>
-</section>
-
-
-
-
-
-
-  
-
-  <!-- Moving background + demo cards -->
+  <!-- Foot of page: page-specific reveal script -->
   <script src="script/course.js" defer></script>
 </body>
 </html>

@@ -30,8 +30,8 @@ body{
 nav{
   position:fixed; top:20px; left:50%; transform:translateX(-50%);
   width:95%; max-width:1200px; border-radius:15px; z-index:1000;
-  background:var(--glass-background-nav);
-  backdrop-filter:var(--glass-blur-effect); -webkit-backdrop-filter:var(--glass-blur-effect);
+  background: #fff;
+  /* backdrop-filter:var(--glass-blur-effect); -webkit-backdrop-filter:var(--glass-blur-effect); */
   border:1px solid var(--glass-border-color);
   box-shadow:0 8px 32px rgba(0,0,0,.25);
 }
@@ -383,3 +383,56 @@ nav{
 
 /* Subtle glow on orange card content */
 .prog--orange .prog__text{ text-shadow: 0 1px 0 rgba(255,255,255,.25) }
+
+/* ===== Courses page grid + cards ===== */
+.courses-page{ padding-top:110px }
+.course-section{ padding:80px 0; background:#ffffff }
+.course-section + .course-section{ border-top:1px solid rgba(0,0,0,.06) }
+.course-head{ margin-bottom:30px }
+.course-title{ font-family:'Playfair Display', serif; font-size:clamp(2rem,4vw,3rem); color:#111 }
+.course-sub{ color:#4b6a9b; max-width:720px }
+.course-grid{ display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:20px }
+.course-grid.one-col{ grid-template-columns:1fr }
+@media (max-width:1100px){ .course-grid{ grid-template-columns:repeat(2,1fr) } }
+@media (max-width:560px){ .course-grid{ grid-template-columns:1fr } }
+
+.course-card{ background:#fff; border:1px solid rgba(0,0,0,.08); border-radius:16px; box-shadow:0 10px 30px rgba(40,50,80,.06); overflow:hidden; transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease }
+.course-card[open]{ border-color:rgba(59,130,246,.35); box-shadow:0 14px 38px rgba(59,130,246,.15) }
+.course-card:hover{ transform:translateY(-5px); box-shadow:0 14px 38px rgba(40,50,80,.12) }
+.card-summary{ display:grid; grid-template-columns:160px 1fr; gap:16px; align-items:center; padding:16px; cursor:pointer; list-style:none }
+.card-summary::-webkit-details-marker{ display:none }
+.card-cover{ width:100%; height:120px; object-fit:cover; border-radius:12px }
+.card-meta h3{ margin:0 0 6px; font-size:1.1rem }
+.card-meta p{ margin:0 0 10px; color:#64748b }
+.card-details{ padding:0 16px 16px; color:#475569; border-top:1px dashed rgba(0,0,0,.08) }
+@media (max-width:560px){ .card-summary{ grid-template-columns:1fr } .card-cover{ height:160px } }
+
+/* reveal animation */
+.reveal-on-scroll{ opacity:0; transform:translateY(24px); transition:opacity .6s ease, transform .6s ease }
+.reveal-on-scroll.is-visible{ opacity:1; transform:translateY(0) }
+
+/* ===== Decorative background for courses page ===== */
+.courses-bg{ position: fixed; inset: 0 0 auto 0; height: 520px; z-index: -1; opacity: .9 }
+
+/* ===== Glassmorphism modal ===== */
+.course-modal{ position:fixed; inset:0; display:none; align-items:center; justify-content:center; z-index:2000 }
+.course-modal.show{ display:flex }
+.modal-backdrop{ position:absolute; inset:0; background:rgba(10,15,24,.55); backdrop-filter: blur(6px) }
+.modal-dialog{
+  position:relative; width:min(760px, 92vw); max-height: 86vh; overflow:auto;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.35);
+  box-shadow: 0 20px 60px rgba(2,6,23,.35);
+  border-radius: 20px;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  padding: 22px 22px 26px;
+}
+.modal-close{ position:absolute; right:12px; top:10px; width:38px; height:38px; border-radius:10px; border:1px solid rgba(255,255,255,.35); background: rgba(255,255,255,.2); color:#0f172a; font-size:22px; cursor:pointer }
+.modal-head h3{ margin:0 0 6px; font:800 clamp(1.2rem,2.4vw,1.6rem) Inter,system-ui; color:#0f172a }
+.modal-head p{ margin:0 0 8px; color:#334155 }
+.modal-meta{ display:flex; gap:18px; flex-wrap:wrap; padding:10px 0 6px; color:#0f172a }
+.modal-desc{ color:#334155; line-height:1.7; margin: 6px 0 12px }
+.modal-features h4{ margin: 10px 0 8px; color:#0f172a }
+.modal-features ul{ margin:0; padding-left:18px; color:#334155; display:grid; gap:6px; grid-template-columns: repeat(2, minmax(0,1fr)) }
+@media (max-width:560px){ .modal-features ul{ grid-template-columns: 1fr } }

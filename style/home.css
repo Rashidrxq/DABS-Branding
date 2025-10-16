@@ -1,6 +1,8 @@
 /* ========================================
    CSS VARIABLES
 ======================================== */
+
+
 :root {
   --primary-color: #1465C6;
   --secondary-color: #E21013;
@@ -35,6 +37,26 @@ body {
   width: 100%;            /* avoid 100vw + scrollbar width issue */
   min-height: 100vh;
   overflow-x: auto;       /* use auto for natural scroll/debug; switch to clip if needed */
+}
+
+/* General responsive container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+  }
 }
 
 
@@ -383,13 +405,38 @@ nav {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .hero {
+    padding: 80px 15px 60px;
+  }
+  
   .hero h1 {
     font-size: 2.2rem;
   }
+  
+  .hero p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .cta-btn {
+    margin-top: 20px;
+    padding: 12px 28px;
+    font-size: 0.9rem;
+  }
 
+  .hero-images {
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
   .hero-images img {
     width: 120px;
     height: 160px;
+  }
+  
+  .hero-images img.left-far,
+  .hero-images img.right-far {
+    display: none;
   }
   
   .tech-grid {
@@ -400,12 +447,59 @@ nav {
   }
 }
 
+@media (max-width: 480px) {
+  .hero {
+    padding: 60px 10px 40px;
+  }
+  
+  .hero h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+  
+  .hero p {
+    font-size: 0.9rem;
+    margin-top: 8px;
+  }
+  
+  .cta-btn {
+    margin-top: 15px;
+    padding: 10px 24px;
+    font-size: 0.85rem;
+  }
+
+  .hero-images {
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .hero-images img {
+    width: 90px;
+    height: 120px;
+  }
+  
+  .hero-images img.left,
+  .hero-images img.right {
+    display: none;
+  }
+  
+  .tech-grid {
+    width: 160%;
+    height: 160%;
+    top: -30%;
+    left: -30%;
+    opacity: 0.1;
+  }
+}
+
 
 /*  */
 
 
 
 /*  */
+
+/* courses-page styles moved to style/course.css */
 
 /* ========================================
    MEET THE TEAM SECTION
@@ -646,6 +740,58 @@ nav {
     }
     .heroContent h1 {
         font-size: clamp(2rem, 8vw, 2.5rem);
+    }
+    
+    .meet-team-section {
+        padding: 40px 0;
+    }
+    
+    .meet-team-section .section-title h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .team-marker {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .meet-team-section {
+        padding: 30px 0;
+    }
+    
+    .meet-team-section .section-title h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .meet-team-section .section-title p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+    
+    .team-marker {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .team-info-card {
+        padding: 20px;
+    }
+    
+    .team-info-card img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .team-info-card h3 {
+        font-size: 1.5rem;
+    }
+    
+    .team-info-card p {
+        font-size: 0.9rem;
     }
 }
 
@@ -895,16 +1041,7 @@ nav {
 }
 
 /* Add new hover effects for footer links */
-.footer-links a {
-    color: #fcfcfc;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: var(--primary-color);
-    text-decoration: underline;
-}
+/* These styles are overridden by the new footer styles below */
 
 /* WhatsApp button hover effect */
 .whatsapp-button {
@@ -1119,11 +1256,137 @@ nav {
     }
 }
 
+/* Footer Styles */
+footer {
+  background: #ffffff;
+  padding: 60px 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  margin-top: 50px;
+}
 
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+  gap: 50px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e0e0e0;
+}
 
+.footer-section h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+}
 
+.logo-section img {
+  width: 160px;
+  margin-bottom: 25px;
+}
 
+.social-links {
+  display: flex;
+  gap: 15px;
+}
 
+.social-links a {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: #0066cc;
+  border-color: #0066cc;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 15px;
+}
+
+.footer-links a:hover {
+  color: #0066cc;
+}
+
+.contact-info p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.contact-info strong {
+  color: #1a1a1a;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 25px;
+  color: #666;
+  font-size: 14px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.copyright strong {
+  color: #1a1a1a;
+}
+
+@media (max-width: 968px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  footer {
+    padding: 40px 20px 20px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+}
+
+/* Reset conflicting footer styles that may have been defined earlier */
+.footer-links a {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 15px;
+}
+
+.footer-links a:hover {
+    color: #0066cc;
+    text-decoration: none;
+}
 
 /* ========================================
    FOUNDERS SECTION STYLES
@@ -1512,6 +1775,42 @@ nav {
     .team-title {
         font-size: 3rem;
     }
+    
+    .team-content {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .team-section {
+        padding: 1rem;
+    }
+    
+    .team-container {
+        gap: 2rem;
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+    }
+    
+    .grid-card {
+        padding: 0.35rem;
+    }
+    
+    .member-info {
+        gap: 1rem;
+    }
+    
+    .member-avatar {
+        width: 4rem;
+        height: 4rem;
+    }
+    
+    .member-name {
+        font-size: 1.25rem;
+    }
 }
 
 @media (max-width: 640px) {
@@ -1526,6 +1825,55 @@ nav {
     .grid-card {
         padding: 0.25rem;
     }
+}
+
+@media (max-width: 480px) {
+    .team-section {
+        padding: 1rem 0.5rem;
+    }
+    
+    .team-container {
+        gap: 1rem;
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.4rem;
+    }
+    
+    .grid-card {
+        padding: 0.15rem;
+    }
+    
+    .member-card {
+        padding: 0.85rem;
+    }
+    
+    .member-info {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    
+    .member-avatar {
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .member-name {
+        font-size: 1rem;
+    }
+    
+    .member-role {
+        font-size: 0.85rem;
+    }
+}
+
+/* Extra small phones adjustments */
+@media (max-width: 360px) {
+    .team-title { font-size: 1.9rem; }
+    .member-card { padding: 0.7rem; }
+    .member-avatar { width: 2.6rem; height: 2.6rem; }
 }
 
 
@@ -1873,6 +2221,146 @@ nav {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
+
+/* Contact Section Styles */
+.contact-section {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.contact-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.contact-content {
+  flex: 1;
+}
+
+.contact-info h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.contact-item i {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  min-width: 30px;
+}
+
+.contact-item h4 {
+  margin: 0 0 5px 0;
+  font-size: 1.1rem;
+}
+
+.contact-item p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.contact-form {
+  flex: 1;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.btn-enquire {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-enquire:hover {
+  background-color: #128C7E;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .contact-layout {
+    flex-direction: column;
+  }
+  
+  .contact-section {
+    padding: 60px 0;
+  }
+  
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 50px 0;
+  }
+  
+  .contact-section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .contact-item {
+    margin-bottom: 15px;
+  }
+  
+  .contact-item i {
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+  
+  .btn-enquire {
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
+}
+
 
 .founder-card {
     position: relative;
@@ -2242,6 +2730,55 @@ nav {
     color: #fff;
 }
 
+/* Responsive adjustments for fashion cards */
+@media (max-width: 768px) {
+  .fashion-cards {
+    gap: 15px;
+  }
+  
+  .card {
+    flex: 0 0 280px;
+    height: 450px;
+  }
+  
+  .card-bottom {
+    padding: 30px 20px 15px;
+  }
+  
+  .card-bottom h2 {
+    font-size: 2rem;
+  }
+  
+  .card-bottom p {
+    font-size: 0.8rem;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fashion-cards {
+    gap: 10px;
+  }
+  
+  .card {
+    flex: 0 0 250px;
+    height: 400px;
+  }
+  
+  .card-bottom {
+    padding: 25px 15px 10px;
+  }
+  
+  .card-bottom h2 {
+    font-size: 1.8rem;
+  }
+  
+  .card-bottom p {
+    font-size: 0.75rem;
+    max-width: 180px;
+  }
+}
+
 /* WhatsApp Button Styles */
 .whatsapp-button {
     display: inline-flex;
@@ -2309,14 +2846,14 @@ nav {
 
 
 
-/*  gallery*/
+/*  gallery section*/
 
 .newgallery-section {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 20px;
+    padding: 30px 17px;
     position: relative;
 }
 
@@ -2562,6 +3099,73 @@ h1 {
 
     .content-wrapper {
         margin-top: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .newgallery-section {
+        padding: 20px 10px;
+        min-height: 80vh;
+    }
+    
+    .arch-container {
+        width: 500px;
+        height: 500px;
+    }
+
+    .arch-track {
+        width: 500px;
+        height: 500px;
+    }
+
+    .image-card {
+        width: 80px;
+        height: 100px;
+    }
+    
+    .content-wrapper {
+        margin-top: 80px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 30px;
+    }
+    
+    .cta-button {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
+    
+    .controls {
+        bottom: 20px;
+        gap: 15px;
+    }
+    
+    .control-btn {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 360px) {
+    .arch-container {
+        width: 400px;
+        height: 400px;
+    }
+
+    .arch-track {
+        width: 400px;
+        height: 400px;
+    }
+
+    .image-card {
+        width: 60px;
+        height: 80px;
     }
 }
    

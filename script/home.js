@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initCoursesAutoScroll();
   initReturnToTop();
+  initSmoothScrolling();
 });
 
 function initTeamInfoCard() {
@@ -154,6 +155,33 @@ function initReturnToTop() {
   });
 }
 
+function initSmoothScrolling() {
+  // Handle anchor link clicks
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      // Check if it's an anchor link (starts with #)
+      const href = this.getAttribute('href');
+      if (href !== '#' && href.startsWith('#')) {
+        e.preventDefault();
+        
+        // Find the target element
+        const targetId = href.substring(1);
+        const targetElement = document.getElementById(targetId);
+        
+        if (targetElement) {
+          // Scroll to the target element smoothly
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+          
+          // Update the URL without reloading the page
+          history.pushState(null, null, href);
+        }
+      }
+    });
+  });
+}
 
 // Reusable auto scroller for any horizontal container
 function initAutoScroller(selector, { speed = 0.5, pauseAfterAction = 1200 } = {}) {
