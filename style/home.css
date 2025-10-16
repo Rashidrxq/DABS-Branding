@@ -2355,26 +2355,26 @@ nav {
 }
 
 /* Positioning cards in a circle - 20 cards total */
-.card-1 { background: linear-gradient(135deg, #ffd4e5 0%, #ffa8cc 100%); }
-.card-2 { background: linear-gradient(135deg, #e3f2fd 0%, #90caf9 100%); }
-.card-3 { background: linear-gradient(135deg, #e0f2f1 0%, #80cbc4 100%); }
-.card-4 { background: linear-gradient(135deg, #fff8e1 0%, #fdd835 100%); }
-.card-5 { background: linear-gradient(135deg, #c8e6c9 0%, #81c784 100%); }
-.card-6 { background: linear-gradient(135deg, #f3e5f5 0%, #ce93d8 100%); }
-.card-7 { background: linear-gradient(135deg, #ffccbc 0%, #ff8a65 100%); }
-.card-8 { background: linear-gradient(135deg, #ff4d8f 0%, #ff1464 100%); }
-.card-9 { background: linear-gradient(135deg, #e8f5e9 0%, #a5d6a7 100%); }
-.card-10 { background: linear-gradient(135deg, #fff9c4 0%, #fff176 100%); }
-.card-11 { background: linear-gradient(135deg, #b3e5fc 0%, #4fc3f7 100%); }
-.card-12 { background: linear-gradient(135deg, #f8bbd0 0%, #f48fb1 100%); }
-.card-13 { background: linear-gradient(135deg, #dcedc8 0%, #aed581 100%); }
-.card-14 { background: linear-gradient(135deg, #ffe0b2 0%, #ffb74d 100%); }
-.card-15 { background: linear-gradient(135deg, #d1c4e9 0%, #9575cd 100%); }
-.card-16 { background: linear-gradient(135deg, #ffccbc 0%, #ff8a65 100%); }
-.card-17 { background: linear-gradient(135deg, #c5e1a5 0%, #9ccc65 100%); }
-.card-18 { background: linear-gradient(135deg, #b2dfdb 0%, #4db6ac 100%); }
-.card-19 { background: linear-gradient(135deg, #ffecb3 0%, #ffd54f 100%); }
-.card-20 { background: linear-gradient(135deg, #f48fb1 0%, #ec407a 100%); }
+.card-1 { background-image: url(../assets/gallery/image.png); background-size: cover; background-position: center; }
+.card-2 { background-image: url(../assets/gallery/image\ copy.png); background-size: cover; background-position: center; }
+.card-3 { background-image: url(../assets/gallery/image\ copy\ 2.png); background-size: cover; background-position: center; }
+.card-4 { background-image: url(../assets/gallery/image\ copy\ 3.png); background-size: cover; background-position: center; }
+.card-5 { background-image: url(../assets/gallery/image\ copy\ 4.png); background-size: cover; background-position: center; }
+.card-6 { background-image: url(../assets/gallery/image\ copy\ 5.png); background-size: cover; background-position: center; }
+.card-7 { background-image: url(../assets/gallery/image\ copy\ 6.png); background-size: cover; background-position: center; }
+.card-8 { background-image: url(../assets/gallery/image\ copy\ 6.png); background-size: cover; background-position: center; }
+.card-9 { background-image: url(../assets/gallery/image\ copy\ 7.png); background-size: cover; background-position: center; }
+.card-10 { background-image: url(../assets/gallery/image\ copy\ 8.png); background-size: cover; background-position: center; }
+.card-11 { background-image: url(../assets/images/t1-1.png); background-size: cover; background-position: center; }
+.card-12 { background-image: url(../assets/images/head1.jpg); background-size: cover; background-position: center; }
+.card-13 { background-image: url(../assets/images/head2.jpg); background-size: cover; background-position: center; }
+.card-14 { background-image: url(../assets/images/head3.jpg); background-size: cover; background-position: center; }
+.card-15 { background-image: url(../assets/images/photographer.jpg); background-size: cover; background-position: center; }
+.card-16 { background-image: url(../assets/images/ceo.jpg); background-size: cover; background-position: center; }
+.card-17 { background-image: url(../assets/gallery/image.png); background-size: cover; background-position: center; }
+.card-18 { background-image: url(../assets/images/production.jpg); background-size: cover; background-position: center; }
+.card-19 { background-image: url(../assets/images/cdp.jpg); background-size: cover; background-position: center; }
+.card-20 { background-image: url(../assets/images/WhatsApp\ Image\ 2025-10-14\ at\ 16.00.29_1407a118.jpg); background-size: cover; background-position: center; }
 
 .content-wrapper {
     max-width: 650px;
@@ -2386,6 +2386,7 @@ nav {
 }
 
 h1 {
+    font-family: 'Playfair Display', serif;
     font-size: 3.2rem;
     font-weight: 400;
     color: #1a1a1a;
@@ -2757,18 +2758,17 @@ body {
   color: var(--text-dark);
   position: relative;
   overflow: hidden;
-  font-family: 'Playfair Display', serif;
 }
 
 .testimonials-section h2 {
   font-size: 2.5rem;
-  font-family: 'Playfair Display', serif;
+  font-family: 'playfair display';
   color: #007bff;
 }
 
 .testimonials-section p {
   font-size: 1.2rem;
-  font-family: 'Playfair Display', serif;
+  font-family: 'playfair display';
   color: #3e413e;
 }
 
@@ -2797,17 +2797,10 @@ body {
   z-index: 1;
 }
 
-.testimonials-wrapper {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  margin: 40px 0;
-}
-
-.testimonials-track {
+.testimonials-grid {
   display: flex;
   gap: 20px;
-  animation: scroll 40s linear infinite;
+  animation: scroll 30s linear infinite;
   padding: 20px 0;
   width: max-content;
 }
@@ -2817,11 +2810,23 @@ body {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-33.333%);
   }
 }
 
-.testimonials-wrapper:hover .testimonials-track {
+@media (max-width: 768px) {
+  .testimonials-grid {
+    animation: scroll 20s linear infinite;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials-grid {
+    animation: scroll 15s linear infinite;
+  }
+}
+
+.testimonials-section:hover .testimonials-grid {
   animation-play-state: paused;
 }
 
@@ -2837,7 +2842,6 @@ body {
   transform: translateY(0);
   position: relative;
   z-index: 2;
-  font-family: 'Playfair Display', serif;
 }
 
 .testimonial-card:hover {
@@ -2852,7 +2856,6 @@ body {
   align-items: center;
   padding: 10px 12px;
   background: white;
-  font-family: 'Playfair Display', serif;
 }
 
 .profile-pic {
@@ -2881,7 +2884,6 @@ body {
   color: #1a1a1a;
   text-decoration: none;
   transition: color 0.3s ease;
-  font-family: 'Playfair Display', serif;
 }
 
 .testimonial-card:hover .username {
@@ -2912,7 +2914,6 @@ body {
   padding: 10px 12px;
   background: white;
   border-top: 1px solid #f0f0f0;
-  font-family: 'Playfair Display', serif;
 }
 
 .interaction-icons {
@@ -2938,7 +2939,6 @@ body {
   color: #777;
   margin-bottom: 3px;
   font-weight: 500;
-  font-family: 'Playfair Display', serif;
 }
 
 .post-date {
@@ -2947,7 +2947,6 @@ body {
   margin-bottom: 6px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  font-family: 'Playfair Display', serif;
 }
 
 .testimonial-caption {
@@ -2959,7 +2958,127 @@ body {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  font-family: 'Playfair Display', serif;
+}
+
+/* Responsive styles for testimonials */
+@media (max-width: 768px) {
+  .testimonials-section {
+    padding: 50px 0;
+  }
+  
+  .testimonials-section h2 {
+    font-size: 2rem;
+  }
+  
+  .testimonials-section p {
+    font-size: 1rem;
+  }
+  
+  .testimonials-grid {
+    gap: 15px;
+    animation-duration: 20s;
+  }
+  
+  .testimonial-card {
+    flex: 0 0 280px;
+  }
+  
+  .testimonial-header {
+    padding: 8px 10px;
+  }
+  
+  .profile-pic {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .username {
+    font-size: 12px;
+  }
+  
+  .testimonial-footer {
+    padding: 8px 10px;
+  }
+  
+  .interaction-icons {
+    gap: 10px;
+  }
+  
+  .interaction-icons i {
+    font-size: 16px;
+  }
+  
+  .testimonial-caption {
+    font-size: 12px;
+  }
+  
+  .likes-text {
+    font-size: 11px;
+  }
+  
+  .post-date {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials-section {
+    padding: 40px 0;
+  }
+  
+  .testimonials-section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .testimonials-grid {
+    gap: 10px;
+    animation-duration: 15s;
+  }
+  
+  .testimonial-card {
+    flex: 0 0 250px;
+  }
+  
+  .testimonial-image {
+    aspect-ratio: 3/4;
+  }
+  
+  .testimonial-header {
+    padding: 6px 8px;
+  }
+  
+  .profile-pic {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .username {
+    font-size: 11px;
+  }
+  
+  .testimonial-footer {
+    padding: 6px 8px;
+  }
+  
+  .interaction-icons {
+    gap: 8px;
+  }
+  
+  .interaction-icons i {
+    font-size: 14px;
+  }
+  
+  .testimonial-caption {
+    font-size: 11px;
+  }
+  
+  .likes-text {
+    font-size: 10px;
+  }
+  
+  .post-date {
+    font-size: 9px;
+  }
 }
 
 /* Responsive adjustments */
@@ -2968,8 +3087,8 @@ body {
     flex: 0 0 300px;
   }
   
-  .testimonials-track {
-    animation: scroll 30s linear infinite;
+  .testimonials-grid {
+    animation: scroll 25s linear infinite;
   }
 }
 
@@ -2978,8 +3097,8 @@ body {
     flex: 0 0 280px;
   }
   
-  .testimonials-track {
-    animation: scroll 25s linear infinite;
+  .testimonials-grid {
+    animation: scroll 20s linear infinite;
   }
 }
 
