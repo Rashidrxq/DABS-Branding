@@ -2805,25 +2805,6 @@ footer {
     box-shadow: 0 5px 15px rgb(7, 173, 62);
 }
 
-/* Footer Links Hover Effect */
-.footer-links a {
-    color: #fcfcfc;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: var(--primary-color);
-    text-decoration: underline;
-}
-
-.footer-about a img {
-    transition: transform 0.3s ease;
-}
-
-.footer-about a img:hover {
-    transform: scale(1.05);
-}
 
 .head-download a {
     display: inline-block;
@@ -2894,11 +2875,11 @@ footer {
 /* Positioning cards in a circle - 20 cards total */
 .card-1 { background-image: url(../assets/gallery/image.png); background-size: cover; background-position: center; }
 .card-2 { background-image: url(../assets/gallery/image\ copy.png); background-size: cover; background-position: center; }
-.card-3 { background-image: url(../assets/gallery/image\ copy\ 2.png); background-size: cover; background-position: center; }
-.card-4 { background-image: url(../assets/gallery/image\ copy\ 3.png); background-size: cover; background-position: center; }
-.card-5 { background-image: url(../assets/gallery/image\ copy\ 4.png); background-size: cover; background-position: center; }
-.card-6 { background-image: url(../assets/gallery/image\ copy\ 5.png); background-size: cover; background-position: center; }
-.card-7 { background-image: url(../assets/gallery/image\ copy\ 6.png); background-size: cover; background-position: center; }
+.card-3 { background-image: url(../assets/images/DSC00650-min.JPG); background-size: cover; background-position: center; }
+.card-4 { background-image: url(../assets/images/DSC00601-min.JPG); background-size: cover; background-position: center; }
+.card-5 { background-image: url(../assets/images/DSC00598-min.JPG); background-size: cover; background-position: center; }
+.card-6 { background-image: url(../assets/images/DSC00595-min.JPG); background-size: cover; background-position: center; }
+.card-7 { background-image: url(../assets/images/DSC00593.jpg); background-size: cover; background-position: center; }
 .card-8 { background-image: url(../assets/gallery/image\ copy\ 6.png); background-size: cover; background-position: center; }
 .card-9 { background-image: url(../assets/gallery/image\ copy\ 7.png); background-size: cover; background-position: center; }
 .card-10 { background-image: url(../assets/gallery/image\ copy\ 8.png); background-size: cover; background-position: center; }
@@ -2906,11 +2887,11 @@ footer {
 .card-12 { background-image: url(../assets/images/head1.jpg); background-size: cover; background-position: center; }
 .card-13 { background-image: url(../assets/images/head2.jpg); background-size: cover; background-position: center; }
 .card-14 { background-image: url(../assets/images/head3.jpg); background-size: cover; background-position: center; }
-.card-15 { background-image: url(../assets/images/photographer.jpg); background-size: cover; background-position: center; }
-.card-16 { background-image: url(../assets/images/ceo.jpg); background-size: cover; background-position: center; }
-.card-17 { background-image: url(../assets/gallery/image.png); background-size: cover; background-position: center; }
-.card-18 { background-image: url(../assets/images/production.jpg); background-size: cover; background-position: center; }
-.card-19 { background-image: url(../assets/images/cdp.jpg); background-size: cover; background-position: center; }
+.card-15 { background-image: url(../assets/images/DSC00589-min.JPG); background-size: cover; background-position: center; }
+.card-16 { background-image: url(../assets/images/DSC00587-min.JPG); background-size: cover; background-position: center; }
+.card-17 { background-image: url(../assets/gallery/image\ copy\ 5.png); background-size: cover; background-position: center; }
+.card-18 { background-image: url(../assets/gallery/image\ copy\ 6.png); background-size: cover; background-position: center; }
+.card-19 { background-image: url(../assets/gallery/image\ copy\ 3.png); background-size: cover; background-position: center; }
 .card-20 { background-image: url(../assets/images/WhatsApp\ Image\ 2025-10-14\ at\ 16.00.29_1407a118.jpg); background-size: cover; background-position: center; }
 
 .content-wrapper {
@@ -3871,3 +3852,32 @@ body {
   font-weight: 700;
 }
 .faq__foot a:hover{ text-decoration: underline; }
+
+
+
+
+
+
+
+
+
+
+/* Footer Links Hover Effect */
+.footer-links a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.footer-about a img {
+    transition: transform 0.3s ease;
+}
+
+.footer-about a img:hover {
+    transform: scale(1.05);
+}
