@@ -687,6 +687,10 @@ nav {
     .links li:hover > .sub-menu {
        display: block; /* Show on hover/tap */
     }
+    /* Add this rule to show submenu when active-submenu class is present */
+    .links li.active-submenu > .sub-menu {
+       display: block; /* Show on click for mobile */
+    }
     #menu-icon {
         display: block;
         font-size: 30px;
