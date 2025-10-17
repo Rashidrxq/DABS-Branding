@@ -1,51 +1,106 @@
-/* ========================================
-   CSS VARIABLES
-======================================== */
 
+/* Mobile Menu Styles */
+@media (max-width: 768px) {
+  /* Mobile menu button */
+  #menu-icon {
+    display: block !important;
+    font-size: 24px;
+    cursor: pointer;
+  }
 
-:root {
-  --primary-color: #1465C6;
-  --secondary-color: #E21013;
-  --text-color: #000000;
-  --text-dark: #36A552;
+  /* Navigation links */
+  .nav-links {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    height: 100vh;
+    max-width: 280px;
+    width: 100%;
+    padding-top: 60px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 1000;
+  }
 
-  --background-dark: #0a0f18;
-  --glass-background-nav: rgba(255, 255, 255, 0.1);
-  --glass-border-color: rgba(255, 255, 255, 0.15);
-  --glass-blur-effect: blur(15px);
+  /* Show navigation when active */
+  .nav-links.show {
+    left: 0;
+  }
 
-  --font-primary: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
-  --font-serif: 'Playfair Display', 'Georgia', serif;
+  /* Links list */
+  .nav-links .links {
+    display: block;
+    padding: 20px;
+  }
+
+  .nav-links li {
+    display: block;
+    margin: 15px 0;
+  }
+
+  /* Submenu styles */
+  .sub-menu {
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: none;
+    transform: none;
+    width: 100%;
+  }
+
+  .showMenu .sub-menu {
+    display: block;
+  }
+
+  /* Close button */
+  .sidebar-logo {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .sidebar-logo .bx-x {
+    font-size: 24px;
+    cursor: pointer;
+  }
 }
 
-/* ========================================
-   GLOBAL STYLES
-======================================== */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-html { scroll-behavior: smooth; }
-
-body {
-  font-family: var(--font-primary);
-  color: #000000;
-  background: linear-gradient(135deg, #ffffff, #ffffff);
-  background-attachment: fixed;
-  line-height: 1.6;
-  font-weight: 400;
-
-  /* Key fixes */
-  width: 100%;            /* avoid 100vw + scrollbar width issue */
-  min-height: 100vh;
-  overflow-x: auto;       /* use auto for natural scroll/debug; switch to clip if needed */
+@media (max-width: 700px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .blog-card {
+    min-height: 340px;
+  }
+  .card-image {
+    height: 140px;
+  }
 }
 
-/* General responsive container */
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
+  .blog-card {
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 8px 32px rgba(44,62,80,0.12);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s;
+    min-height: 420px;
+    position: relative;
+  }
+
+
+  .blog-card:hover {
+    box-shadow: 0 12px 40px rgba(44,62,80,0.18);
+    object-fit: cover;
+  }
+  
+
 
 @media (max-width: 768px) {
   .container {
@@ -755,6 +810,24 @@ footer {
   font-weight: 700;
   margin-bottom: 25px;
   color: #1a1a1a;
+}
+
+/* Responsive adjustments for footer */
+@media (max-width: 992px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .footer-section {
+    text-align: center;
+  }
 }
 
 

@@ -1,5 +1,47 @@
-// Blog Section Interactivity
+// Mobile Menu Functionality
+const menuOpenBtn = document.querySelector("#menu-icon");
+const menuCloseBtn = document.querySelector(".bx-x");
+const navLinks = document.querySelector(".nav-links");
 
+// When menu icon is clicked
+menuOpenBtn.addEventListener("click", () => {
+    navLinks.style.left = "0";
+});
+
+// When close icon is clicked
+menuCloseBtn.addEventListener("click", () => {
+    navLinks.style.left = "-100%";
+});
+
+// Handle submenu on mobile
+let arrows = document.querySelectorAll(".arrow");
+arrows.forEach((arrow) => {
+    arrow.addEventListener("click", (e) => {
+        e.preventDefault();
+        let arrowParent = arrow.parentElement;
+        arrowParent.classList.toggle("showMenu");
+    });
+});
+
+// Return to top button functionality
+const returnToTopBtn = document.querySelector("#return-to-top");
+
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 300) {
+        returnToTopBtn.classList.add("show");
+    } else {
+        returnToTopBtn.classList.remove("show");
+    }
+});
+
+returnToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+// Blog Section Interactivity
 document.addEventListener('DOMContentLoaded', function() {
   // Add scroll animations to blog cards
   const blogCards = document.querySelectorAll('.blog-card');

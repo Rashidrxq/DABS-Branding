@@ -797,27 +797,11 @@ nav {
     }
 }
 
-/* Footer Styles */
-.footer-links a {
-    color: #fcfcfc;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
 
-.footer-links a:hover {
-    color: var(--primary-color);
-    text-decoration: underline;
-}
+/* ========================================
+   FOOTER STYLES
+======================================== */
 
-.footer-about a img {
-    transition: transform 0.3s ease;
-}
-
-.footer-about a img:hover {
-    transform: scale(1.05);
-}
-
-/* New Footer Styles - These will override the above styles */
 footer {
   background: #ffffff;
   padding: 60px 40px 20px;
@@ -892,15 +876,14 @@ footer {
   color: #0066cc;
 }
 
-/* Updated contact info styles for footer */
-.footer-content .contact-info p {
+.contact-info p {
   color: #555;
   line-height: 1.8;
   margin-bottom: 15px;
   font-size: 15px;
 }
 
-.footer-content .contact-info strong {
+.contact-info strong {
   color: #1a1a1a;
   display: block;
   margin-bottom: 5px;
@@ -916,7 +899,7 @@ footer {
 }
 
 .copyright strong {
-    color: #1a1a1a;
+  color: #1a1a1a;
 }
 
 @media (max-width: 968px) {
@@ -950,6 +933,8 @@ footer {
     text-decoration: none;
 }
 
+/* ========================================
+   WHATSAPP & RETURN TO TOP BUTTONS
 /*  */
 
 /* WhatsApp Button Styles */

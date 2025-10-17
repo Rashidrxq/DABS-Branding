@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - DABS</title>
+
+  <!-- Premium Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  
+  <!-- Font Awesome for social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style/home.css"/>
+  <link rel="stylesheet" href="style/contactus.css"/>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="navbar">
+        <div class="logo">
+          <img src="assets/images/logo.png" href="index.html" alt="DABS Logo">
+        </div>
+        <div class="nav-links">
+          <div class="sidebar-logo">
+            <span class="logo-name">DABS</span>
+            <i class="bx bx-x"></i>
+          </div>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="#" aria-haspopup="true">Courses</a>
+              <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
+              <ul class="htmlCss-sub-menu sub-menu">
+                <li class="more">
+                  <a href="digital_marketing.html">Digital Marketing</a>
+                  <ul class="more-sub-menu sub-menu">
+                    <li><a href="digital_marketing.html">Popular Courses</a></li>
+                    <li><a href="digital-marketing.html">Short Courses</a></li>
+                    <li><a href="digital-marketing.html">Pro Courses</a></li>
+                    <li><a href="digital-marketing.html">Online Courses</a></li>
+                  </ul>
+                </li>
+                <li><a href="branding.html">Branding & Advertising</a></li>
+                <li><a href="media_production.html">Media Production</a></li>
+              </ul>
+            </li>
+            <li><a href="placement.html">Placements</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contactus.html" class="active">Contact</a></li>
+            <li class="head-download">
+              <a class="btn btn-connect" href="#contact-section">Let's Connect</a>
+            </li>
+          </ul>
+        </div>
+        <i class="bx bx-menu" id="menu-icon"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contact Hero Section -->
+  <section class="contact-hero">
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <p>Have questions? We're here to help and answer any question you might have.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h2>Send us a Message</h2>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a subject</option>
+                <option value="course">Course Inquiry</option>
+                <option value="admission">Admission</option>
+                <option value="placement">Placement</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <div class="info-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Visit Us</h3>
+            <p>123 Education Street<br>Mukkam, Kozhikode</p>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-phone-alt"></i>
+            <h3>Call Us</h3>
+            <p>+91 80869 93188<br>+91 75618 62328</p>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-envelope"></i>
+            <h3>Email Us</h3>
+            <p>shamlukk96@gmail.com<br>info@dabsinstitute.com</p>
+          </div>
+          <div class="social-links">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://instagram.com/dabsschool_" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map-section">
+    <div class="container">
+      <div class="map-wrapper">
+      <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.XXXXXX!2dXXXXXXXX!3dXXXXXXXX!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba641016b913899%3A0xb8b125f235d90d73!2sDABS%20Dene%20Advertising%20%26%20Branding%20School!5e0!3m2!1sen!2sin!4vYYYYYYYYYYYYY"
+  width="600"
+  height="450"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About DABS</h3>
+        <p>DABS is a premier institute offering comprehensive courses in digital marketing, media production, and branding solutions. Our mission is to create industry-ready professionals.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="placement.html">Placements</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <ul class="contact-info">
+          <li><i class="fas fa-map-marker-alt"></i> Second floor yambu tower near Big fresh hyper market, Mukkam, Kerala</li>
+          <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+          <li><i class="fas fa-envelope"></i> info@dabs.edu.in</li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 DABS. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating buttons -->
+  <div class="whatsapp">
+    <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-button">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <a href="javascript:" id="return-to-top" aria-label="Return to top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <script src="script/home.js" defer></script>
+  <script src="script/contactus.js" defer></script>
+</body>
+</html>
