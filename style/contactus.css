@@ -9,9 +9,7 @@
     transition: color 0.3s ease;
   }
   
-  #menu-icon:hover {
-    color: #3b82f6;
-  }
+  #menu-icon:hover { color: #3b82f6; }
 
   .nav-links {
     position: fixed;
@@ -25,14 +23,9 @@
     box-shadow: -5px 0 15px rgba(0,0,0,0.1);
   }
 
-  .nav-links.active {
-    right: 0;
-  }
+  .nav-links.active { right: 0; }
 
-  .nav-links .links {
-    flex-direction: column;
-    gap: 20px;
-  }
+  .nav-links .links { flex-direction: column; gap: 20px; }
 
   .sidebar-logo {
     display: flex;
@@ -59,14 +52,8 @@
     max-height: 500px;
   }
 
-  .more-sub-menu {
-    position: static;
-    width: 100%;
-    margin-left: 0;
-    padding-left: 20px;
-  }
+  .more-sub-menu { position: static; width: 100%; margin-left: 0; padding-left: 20px; }
 }
-
 /* Contact Hero Section */
 .contact-hero {
   background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
